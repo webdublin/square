@@ -1,2 +1,7 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<h1>Square</h1>
+<div id="search">
+	<%= render partial: 'shared/search'%>
+</div>
+<div id="prop">
+<%= render partial: 'shared/property', collection: @properties%>
+</div>

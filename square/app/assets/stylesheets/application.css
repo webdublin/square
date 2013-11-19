@@ -11,3 +11,10 @@
  *= require_self
  *= require_tree .
  */
+
+#prop{
+	height: 20em;
+	width: 30em;
+	overflow: auto;
+	background-color:#cccccc;
+}
