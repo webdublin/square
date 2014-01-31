@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20131030165448) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "countries", force: true do |t|
     t.string   "name"
     t.string   "iso_code"
@@ -31,7 +28,7 @@ ActiveRecord::Schema.define(version: 20131030165448) do
     t.datetime "updated_at"
   end
 
-  add_index "events", ["country_id"], name: "index_events_on_country_id", using: :btree
+  add_index "events", ["country_id"], name: "index_events_on_country_id"
 
   create_table "test_tables", force: true do |t|
     t.string   "name"
