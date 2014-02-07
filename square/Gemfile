@@ -47,3 +47,4 @@ end
 #gem 'pg'
 gem 'postgres-pr'
 gem 'httparty'
+gem 'omniauth-twitter'
