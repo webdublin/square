@@ -9,6 +9,8 @@ Square::Application.routes.draw do
   resources :welcomes
   
   match 'search', to: 'welcome#index', via: [:get, :post]  
+  match 'tweets', to: 'welcome#tweets', via: [:get, :post]
+  match 'flickr', to: 'welcome#flickr', via: [:get, :post]
  
   root "welcome#index"
   
